@@ -13,6 +13,7 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    "gatsby-plugin-offline",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
