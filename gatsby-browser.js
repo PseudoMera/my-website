@@ -7,6 +7,6 @@ import Layout from "./src/components/layout/layout";
 
 export const onServiceWorkerUpdateReady = () => window.location.reload();
 
-export function wrapPageElement ({ element, props }) {
+export function wrapPageElement({ element, props }) {
   return <Layout {...props}>{element}</Layout>;
-};
+}
