@@ -1,6 +1,7 @@
 import React from "react";
 
 import socials from "../../data/socials";
+import ExternalLink from "../externalLink/externalLink";
 
 import * as styles from "./footer.module.scss";
 
@@ -10,23 +11,19 @@ const Footer = () => {
       <ul className={styles.socials}>
         <li>Made by Albin Frias</li>
         <li>
-          Illustration(s) from
-          <a
-            href="https://absurd.design/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          Illustration(s) from{" "}
+          <ExternalLink href="https://absurd.design/">
             absurd.design
-          </a>
+          </ExternalLink>
         </li>
       </ul>
 
       <ul className={styles.socials}>
         {socials.map((social, idx) => (
           <li key={`${social.name}-${idx}`}>
-            <a href={social.url} target="_blank" rel="noopener noreferrer">
+            <ExternalLink href={social.url} className="link">
               {social.name}
-            </a>
+            </ExternalLink>
             <img src={social.icon} alt={social.name} />
           </li>
         ))}

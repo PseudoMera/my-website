@@ -5,22 +5,24 @@
 }
 
 :root {
-  --font-color: #495057;
-  --heading-color: #343a40;
-  --background: white;
-  --dark-font-color: #1b1d25;
-  --medium-font-color: #60656c;
-  --light-font-color: #858b93;
-  --light-background: #f1f4f8;
-  --light-background-hover: #e1e6ed;
-  --border: #d6d9de;
-  --link-color: #5183f5;
-  --link-color-darker: #364fc7;
-  --navbar-color: #1b1d25;
-  --blockquote: #edf2ff;
-  --transparent-text: rgba(0, 0, 0, 0.7);
-  --transparent-bg: rgba(0, 0, 0, 0.05);
-  --light-transparent-bg: rgba(255, 255, 255, 0.1);
+  --font-color: #b3b9c5;
+  --heading-color: #ffd479;
+  --dark-font-color: #ced4da;
+  --background: #111112;
+  --medium-font-color: #dee2e6;
+  --light-font-color: #868e96;
+  --light-background: #2d2d31;
+  --light-background-hover: #3b3b3e;
+  --code-background-color: #2e2e30;
+  --border: #404040;
+  --link-color: #6ab0f3;
+  --link-color-darker: #4a72a5;
+  --link-hover-color: #e1a6f2;
+  --navbar-color: #1d1d1d;
+  --blockquote: #2a4661;
+  --transparent-text: rgba(255, 255, 255, 0.7);
+  --transparent-bg: rgba(0, 0, 0, 0.2);
+  --light-transparent-bg: rgba(255, 255, 255, 0.05);
   --code-font-family: Menlo, "Roboto Mono", Courier New, monospace;
 }
 
@@ -38,6 +40,7 @@ body {
   padding: 0;
 }
 
+// Manage right top and bottom left images
 .abs-img1,
 .abs-img2 {
   display: none;
@@ -271,7 +274,7 @@ a {
 }
 
 a:hover {
-  color: #101010;
+  color: white;
   border-bottom: 3px solid #96b4f9;
 }
 
