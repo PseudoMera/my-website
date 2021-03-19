@@ -24,6 +24,9 @@
   --transparent-bg: rgba(0, 0, 0, 0.2);
   --light-transparent-bg: rgba(255, 255, 255, 0.05);
   --code-font-family: Menlo, "Roboto Mono", Courier New, monospace;
+  --dark-card-color: rgb(83, 83, 83);
+  --light-card-color: #6f6f6f;
+  --card-gradient: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.4));
 }
 
 html {
@@ -73,7 +76,7 @@ body {
 @media screen and (min-width: 960px) {
   .abs-img1,
   .abs-img2 {
-    position: absolute;
+    position: fixed;
     display: block;
     z-index: -1;
   }

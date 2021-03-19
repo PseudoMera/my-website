@@ -3,26 +3,15 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Images = () => {
   return (
-    <>
-      <StaticImage
-        src="../images/absurd-06.png"
-        alt="Snail racing to it's goal"
-        placeholder="blurred"
-        layout="constrained"
-        width={300}
-        height={300}
-        className="abs-img1"
-      />
-      {/* <StaticImage
-        src="../images/absurd-07.png"
-        alt="Bulbs"
-        placeholder="blurred"
-        layout="constrained"
-        width={300}
-        height={300}
-        className="abs-img2"
-      /> */}
-    </>
+    <StaticImage
+      src="../images/absurd-06.png"
+      alt="Snail racing to it's goal"
+      placeholder="blurred"
+      layout="constrained"
+      width={300}
+      height={300}
+      className="abs-img1"
+    />
   );
 };
 
