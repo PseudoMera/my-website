@@ -32,6 +32,7 @@ const ProjectsPage = () => {
             repoUrl={project.repositoryUrl}
             type={idx % 2 === 0 ? "light" : "dark"}
             icon={project.icon}
+            tools={project.tools}
           />
         ))}
       </main>
