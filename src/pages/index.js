@@ -42,17 +42,16 @@ const IndexPage = () => {
           ultimate goal being to work as a tooling engineer.
         </p>
         <p>
-          You can find more about my work and what I'm currently working on at:{" "}
+          To find more about my work go to{" "}
           <ExternalLink href={Github.url}>
-            {Github.name}
+            {Github.name}.
             <img src={Github.icon} alt="Github" />
           </ExternalLink>
         </p>
         <p>
-          In addition to my work you can also find more personal information
-          about me in:{" "}
+          You can also find more information about me in{" "}
           <ExternalLink href={Linkedin.url}>
-            {Linkedin.name}
+            {Linkedin.name}.
             <img src={Linkedin.icon} alt="Linkedin" />
           </ExternalLink>
         </p>
