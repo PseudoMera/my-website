@@ -15,6 +15,13 @@ const projects = [
     repositoryUrl: "https://github.com/PseudoMera/my-website",
     tools: "Gatsby, SCSS, ReactJS",
   },
+  {
+    icon: "\u2699\uFE0F",
+    title: "SyncDrive",
+    description: "Script to sync a google drive directory with a local directory",
+    repositoryUrl: "https://github.com/PseudoMera/SyncDrive",
+    tools: "Python"
+  }
 ];
 
 export default projects;

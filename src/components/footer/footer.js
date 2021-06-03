@@ -11,7 +11,7 @@ const Footer = () => {
       <ul className={styles.socials}>
         <li>Made by Albin Frias</li>
         <li>
-          Illustration(s) from{" "}
+          Illustration(s) from &nbsp;
           <ExternalLink href="https://absurd.design/">
             absurd.design
           </ExternalLink>
