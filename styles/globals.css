@@ -1,0 +1,52 @@
+:root {
+  --main-bg-color: #333333;
+  --secondary-layout-bg-color: #33302f;
+  --main-layout-bg-color: #080603;
+  --title-color: #20c20e;
+  --text-color: #ffffff;
+}
+
+html {
+  background-color: var(--main-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+.screen {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .screen {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .screen {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .screen {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .screen {
+    width: 1400px;
+  }
+}
