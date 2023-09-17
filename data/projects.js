@@ -8,7 +8,7 @@ const projects = [
   {
     name: "PORTAL",
     description: "Decentralized infrastructure just a few clicks away.",
-    link: "https://github.com/pokt-foundation/portal",
+    link: "https://github.com/pokt-foundation/portal-platform",
   },
   {
     name: "MY WEBSITE",

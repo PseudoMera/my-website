@@ -5,10 +5,10 @@ export default function PersonalInfo() {
   return (
     <>
       {personalInfo.map(({ path, value }) => (
-        <>
-          <TerminalPath key={path} path={path} />
+        <div key={path}>
+          <TerminalPath path={path} />
           {value}
-        </>
+        </div>
       ))}
     </>
   );
