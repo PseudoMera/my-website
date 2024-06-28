@@ -1,9 +1,13 @@
 :root {
-  --main-bg-color: #CCCCCC;
-  --secondary-layout-bg-color: #33302f;
-  --main-layout-bg-color: #080603;
-  --title-color: #20c20e;
-  --text-color: #ffffff;
+  --main-bg-color: #2E3440;
+  --secondary-layout-bg-color: #4C566A;
+  --main-layout-bg-color: #3B4252;
+  --title-color: #A3BE8C;
+  --text-color: #D8DEE9;
+  --link-color: #88C0D0;
+  --link-hover-color: #5E81AC;
+  --link-visited-color: #A3A0C3;
+  --terminal-path-end-color: #81A1C1;
 }
 
 html {
@@ -25,6 +29,18 @@ p {
 
 .screen {
   width: 100%;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
 }
 
 @media screen and (min-width: 768px) {

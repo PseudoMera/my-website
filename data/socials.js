@@ -7,7 +7,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: "/icons/linkedin.svg",
-    link: "https://www.linkedin.com/in/albin-e-frias-rojas-1567b9196/",
+    link: "https://www.linkedin.com/in/albinfrias",
   },
   {
     name: "Resume",
