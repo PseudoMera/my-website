@@ -1,5 +1,10 @@
 const projects = [
   {
+    name: "Virtual-Store",
+    description: "Scalable microservices-based e-commerce application using Go and Kubernetes",
+    link: "https://github.com/PseudoMera/virtual-store",
+  },
+  {
     name: "WALLET",
     description:
       "React web app for creating and interacting with the POKT Wallet.",
@@ -14,11 +19,6 @@ const projects = [
     name: "MY WEBSITE",
     description: "Personal website built with Nextjs.",
     link: "https://github.com/PseudoMera/my-website",
-  },
-  {
-    name: "POCKET-UI",
-    description: "Pocket Network design system implementation.",
-    link: "https://github.com/pokt-foundation/pocket-ui",
   },
 ];
 
