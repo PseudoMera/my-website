@@ -1,5 +1,11 @@
 const projects = [
   {
+    name: "15-Puzzle",
+    description: "Sliding puzzle game on a 4x4 board, built in C++ with raylib.",
+    link: "https://github.com/PseudoMera/15-puzzle",
+    tags: ["C++", "raylib", "CMake"],
+  },
+  {
     name: "Virtual-Store",
     description: "Scalable microservices-based e-commerce application using Go and Kubernetes",
     link: "https://github.com/PseudoMera/virtual-store",

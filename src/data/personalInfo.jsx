@@ -4,7 +4,8 @@ const personalInfo = {
   tagline: "Software Engineer — C++ · Graphics · Systems",
   bio: [
     "Hey, I'm Albin — a software engineer from the Dominican Republic living in Madrid, Spain.",
-    "I write Go day-to-day, and I'm deep in C++ right now, sharpening the low-level, performance-minded side of engineering: graphics, game systems, and the kind of quant/systems work where correctness and speed both matter.",
+    "Right now I'm putting most of my time into C++: graphics, game systems, and the kind of low-level, performance-minded work where speed and correctness both matter.",
+    "I know OpenGL, I'm picking up Vulkan, and I've been reading a lot about SIMD lately.",
   ],
 };
 
