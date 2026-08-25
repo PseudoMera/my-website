@@ -1,7 +1,7 @@
 import TerminalPath from "@/components/terminalPath/terminalPath";
 import personalInfo from "@/data/personalInfo";
 
-export default function PersonalInfo() {
+function PersonalInfo() {
   return (
     <>
       {personalInfo.map(({ path, value }) => (
@@ -13,3 +13,5 @@ export default function PersonalInfo() {
     </>
   );
 }
+
+export default PersonalInfo;

@@ -6,10 +6,11 @@
 
 ### `npm run build`
 
-- Builds the projects at .next directory
-### `npm run start`
+- Builds the project to the `dist` directory
 
-- Runs the app in production mode
+### `npm run preview`
+
+- Serves the production build locally
 
 ### `npm run lint`
 

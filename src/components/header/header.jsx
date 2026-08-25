@@ -1,7 +1,7 @@
-import TerminalPath from "../terminalPath/terminalPath";
+import TerminalPath from "@/components/terminalPath/terminalPath";
 import styles from "./styles.module.css";
 
-export default function Header({ items = [] }) {
+function Header({ items = [] }) {
   return (
     <nav className={`screen ${styles.nav}`}>
       <ul className={styles.list}>
@@ -18,3 +18,5 @@ export default function Header({ items = [] }) {
     </nav>
   );
 }
+
+export default Header;

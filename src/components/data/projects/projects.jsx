@@ -2,7 +2,7 @@ import TerminalPath from "@/components/terminalPath/terminalPath";
 import projects from "@/data/projects";
 import styles from "./styles.module.css";
 
-export default function Projects() {
+function Projects() {
   return (
     <>
       <TerminalPath path="/projects" />
@@ -17,3 +17,5 @@ export default function Projects() {
     </>
   );
 }
+
+export default Projects;
