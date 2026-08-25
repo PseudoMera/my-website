@@ -1,21 +1,30 @@
-import TerminalPath from "@/components/terminalPath/terminalPath";
 import styles from "./styles.module.css";
 
-function Header({ items = [] }) {
+const NAV_ITEMS = [
+  { id: "about", label: "about" },
+  { id: "projects", label: "projects" },
+  { id: "contact", label: "contact" },
+];
+
+function Header() {
   return (
-    <nav className={`screen ${styles.nav}`}>
-      <ul className={styles.list}>
-        <li className={styles.listItem}>
-          <TerminalPath />
-        </li>
-        {/*Change with actual links if I decide to add more pages/routes*/}
-        {items.map(({ id, name }) => (
-          <li key={id} className={styles.listItem}>
-            {name}
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <header className={styles.header}>
+      <nav className={`screen ${styles.nav}`}>
+        <a href="#top" className={styles.brand}>
+          <span className={styles.brandDot} />
+          pseudomera
+        </a>
+        <ul className={styles.list}>
+          {NAV_ITEMS.map(({ id, label }) => (
+            <li key={id}>
+              <a href={`#${id}`} className={styles.navLink}>
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 }
 

@@ -1,23 +1,11 @@
-const personalInfo = [
-  {
-    path: "/name",
-    value: <p>Albin Esteban Frias Rojas</p>,
-  },
-  {
-    path: "/description",
-    value: (
-      <>
-        <p>
-          Hello there! My name is Albin Esteban Frias Rojas and I&apos;m a
-          software engineer from the Dominican Republic living in Madrid, Spain.
-        </p>
-
-        <p>
-          These days I mostly use go or c++ (mainly for game dev), but I am always open to try other tools.
-        </p>
-      </>
-    ),
-  },
-];
+const personalInfo = {
+  eyebrow: "whoami",
+  name: "Albin Esteban Frías Rojas",
+  tagline: "Software Engineer — C++ · Graphics · Systems",
+  bio: [
+    "Hey, I'm Albin — a software engineer from the Dominican Republic living in Madrid, Spain.",
+    "I write Go day-to-day, and I'm deep in C++ right now, sharpening the low-level, performance-minded side of engineering: graphics, game systems, and the kind of quant/systems work where correctness and speed both matter.",
+  ],
+};
 
 export default personalInfo;
