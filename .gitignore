@@ -1,5 +1,5 @@
 node_modules/
 .cache/
-.next
+dist
 .env
 .vscode

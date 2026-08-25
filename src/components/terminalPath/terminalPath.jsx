@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-export default function TerminalPath({ path = "" }) {
+function TerminalPath({ path = "" }) {
   return (
     <span className={styles.path}>
       albinfrias@pseudomera:~
@@ -10,3 +10,5 @@ export default function TerminalPath({ path = "" }) {
     </span>
   );
 }
+
+export default TerminalPath;

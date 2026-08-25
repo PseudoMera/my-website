@@ -1,9 +1,8 @@
-import Image from "next/image";
-import TerminalPath from "../../terminalPath/terminalPath";
-import socials from "data/socials";
+import TerminalPath from "@/components/terminalPath/terminalPath";
+import socials from "@/data/socials";
 import styles from "./styles.module.css";
 
-export default function Socials() {
+function Socials() {
   return (
     <>
       <TerminalPath path="/socials" />
@@ -16,10 +15,12 @@ export default function Socials() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={icon} alt={name} width={20} height={20} /> {name}
+            <img src={icon} alt={name} width={20} height={20} /> {name}
           </a>
         ))}
       </div>
     </>
   );
 }
+
+export default Socials;

@@ -17,7 +17,7 @@ const projects = [
   },
   {
     name: "MY WEBSITE",
-    description: "Personal website built with Nextjs.",
+    description: "Personal website built with Vite and React.",
     link: "https://github.com/PseudoMera/my-website",
   },
 ];
