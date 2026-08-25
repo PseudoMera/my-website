@@ -4,9 +4,10 @@ import styles from "./styles.module.css";
 
 function Socials() {
   return (
-    <>
-      <TerminalPath path="/socials" />
-      <div>
+    <section id="contact" className={styles.section}>
+      <TerminalPath path="contact --socials" />
+      <h2 className={styles.heading}>Contact</h2>
+      <div className={styles.row}>
         {socials.map(({ name, icon, link }) => (
           <a
             className={styles.socialLink}
@@ -15,11 +16,12 @@ function Socials() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={icon} alt={name} width={20} height={20} /> {name}
+            <img src={icon} alt="" width={16} height={16} />
+            {name}
           </a>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

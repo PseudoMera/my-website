@@ -4,17 +4,31 @@ import styles from "./styles.module.css";
 
 function Projects() {
   return (
-    <>
-      <TerminalPath path="/projects" />
-      {projects.map(({ description, link, name }) => (
-        <div className={styles.projectContainer} key={name}>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            {name}
+    <section id="projects" className={styles.section}>
+      <TerminalPath path="ls ./projects" />
+      <h2 className={styles.heading}>Projects</h2>
+      <div className={styles.grid}>
+        {projects.map(({ name, description, link, tags }) => (
+          <a
+            key={name}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.card}
+          >
+            <h3 className={styles.cardTitle}>{name}</h3>
+            <p className={styles.cardDescription}>{description}</p>
+            <ul className={styles.tags}>
+              {tags.map((tag) => (
+                <li key={tag} className={styles.tag}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </a>
-          <p>{description}</p>
-        </div>
-      ))}
-    </>
+        ))}
+      </div>
+    </section>
   );
 }
 

@@ -1,8 +1,15 @@
 .path {
-  color: var(--title-color);
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
 }
 
-.path_end {
-  color: var(--terminal-path-end-color);
+.prompt {
+  color: var(--accent-color-2);
 }

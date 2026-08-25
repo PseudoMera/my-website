@@ -1,17 +1,40 @@
 :root {
-  --main-bg-color: #2E3440;
-  --secondary-layout-bg-color: #4C566A;
-  --main-layout-bg-color: #3B4252;
-  --title-color: #A3BE8C;
-  --text-color: #D8DEE9;
-  --link-color: #88C0D0;
-  --link-hover-color: #5E81AC;
-  --link-visited-color: #A3A0C3;
-  --terminal-path-end-color: #81A1C1;
+  --bg-color: #05070a;
+  --surface-color: rgba(255, 255, 255, 0.035);
+  --surface-hover-color: rgba(255, 255, 255, 0.06);
+  --border-color: rgba(148, 163, 184, 0.16);
+  --border-hover-color: rgba(94, 234, 212, 0.45);
+  --title-color: #f2f5f9;
+  --text-color: #aab4c2;
+  --text-dim-color: #6b7686;
+  --accent-color: #5eead4;
+  --accent-color-2: #8b7bff;
+  --accent-glow: rgba(94, 234, 212, 0.35);
+  --link-color: #5eead4;
+  --link-hover-color: #93f5e4;
+  --link-visited-color: #8b7bff;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 html {
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-color);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -21,18 +44,23 @@ h4,
 h5,
 h6 {
   color: var(--title-color);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 p {
   color: var(--text-color);
+  line-height: 1.7;
 }
 
 .screen {
   width: 100%;
+  padding: 0 20px;
 }
 
 a {
   color: var(--link-color);
+  text-decoration: none;
 }
 
 a:hover {
@@ -43,26 +71,31 @@ a:visited {
   color: var(--link-visited-color);
 }
 
+::selection {
+  background: var(--accent-glow);
+  color: var(--title-color);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
 @media screen and (min-width: 768px) {
   .screen {
-    width: 768px;
+    width: 720px;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 992px) {
   .screen {
-    width: 992px;
+    width: 900px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .screen {
-    width: 1200px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .screen {
-    width: 1400px;
+    width: 1040px;
   }
 }

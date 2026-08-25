@@ -1,3 +1,67 @@
-.projectContainer {
-  margin: 1em 0;
+.section {
+  width: 100%;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin: 0 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: block;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--border-hover-color);
+  background: var(--surface-hover-color);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+.card:visited {
+  color: inherit;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  margin: 0 0 8px;
+  color: var(--title-color);
+  letter-spacing: 0.02em;
+}
+
+.cardDescription {
+  font-size: 0.85rem;
+  margin: 0 0 16px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  color: var(--text-dim-color);
 }

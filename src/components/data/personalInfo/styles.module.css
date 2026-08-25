@@ -1,0 +1,63 @@
+.hero {
+  padding-top: 40px;
+  max-width: 680px;
+}
+
+.name {
+  font-size: clamp(1.9rem, 5vw, 2.75rem);
+  margin: 0 0 12px;
+}
+
+.tagline {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  color: var(--accent-color);
+  margin: 0 0 28px;
+}
+
+.bioLine {
+  margin: 0 0 16px;
+  max-width: 60ch;
+}
+
+.ctas {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 12px 22px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.ctaPrimary {
+  background: var(--accent-color);
+  color: #05070a;
+  font-weight: 600;
+}
+
+.ctaPrimary:hover {
+  box-shadow: 0 0 18px var(--accent-glow);
+  color: #05070a;
+}
+
+.ctaPrimary:visited {
+  color: #05070a;
+}
+
+.ctaSecondary {
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.ctaSecondary:hover {
+  border-color: var(--border-hover-color);
+  color: var(--accent-color);
+}
